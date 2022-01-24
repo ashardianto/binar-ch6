@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+  </head>
+  <body>
+    <form action="/articles/<%= i.id %>" method="PUT">
+      <label for="nickname">Nickname</label>
+      <br />
+      <input type="text" name="nickname" />
+      <br />
+
+      <label for="server">Server</label>
+      <br />
+      <input type="text" name="server" />
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

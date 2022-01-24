@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Articles | <%= a.nickname %></title>
+  </head>
+  <body>
+    <div>
+      <h1><%= a.nickname %></h1>
+      <p><%= a.server %></p>
+      <form action="/articles/<%= a.id %>" method="POST">
+        <p>
+            <label for="update">Update Your Data</label>
+        </p>
+
+        <label for="nickname">Nickname</label>
+        <p>
+            <input type="text" name="nickname" value="<%= a.nickname %>"/>
+        </p>
+  
+        <label for="server">Server</label>
+        <p>
+            <input type="text" name="server" value="<%= a.server %>"/>
+        </p>
+  
+        <p>
+            <input type="hidden" name="_method" value="PUT">
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+    </div>
+  </body>
+</html>
